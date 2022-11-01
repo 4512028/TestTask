@@ -7,12 +7,12 @@ const Task1 = require("../task1");
 describe("Task Test cases", () => {
   describe("3,5 multiples", () => {
     it("sum Of Numbers", () => {
-      expect(Task1.sumOfNumbers()).to.equal(233168);
+      expect(Task1.sumOfNumbers(3, 5, 1000)).to.equal(233168);
     });
   });
   describe("Fibonacci sum", () => {
     it("Fibonacci sum", () => {
-      expect(Task.FibonacciSum()).to.equal(4613732);
+      expect(Task.FibonacciSum(1, 2, 4000000)).to.equal(4613732);
     });
   });
 });

@@ -7,13 +7,9 @@
 // By considering the terms in the Fibonacci sequence whose values do
 //  not exceed four million, find the sum of the even-valued terms.
 
-const FibonacciSum = () => {
+const FibonacciSum = (previousFirstTerm, previousSecondTerm, limit) => {
   var sum = 0,
-    previousFirstTerm = 1,
-    previousSecondTerm = 2,
-    limit = 4000000,
     value = 0;
-
   while (value < limit) {
     if (previousSecondTerm % 2 == 0) {
       sum += previousSecondTerm;
